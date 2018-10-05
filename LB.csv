@@ -1,0 +1,4 @@
+,model_name,datetime,score,ideal_score
+0,0.Baseline,,0.0,0.0
+1,1.Baseline_with_LightGBM/,,3.522452011843062,0.022640539818792993
+2,sdsj2018_lightgbm_baseline-master, 2018-10-05 21:19:51.582988,6.0,0.03856496510272694

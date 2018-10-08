@@ -34,8 +34,8 @@ if __name__ == '__main__':
             results[key + '-score'] = results[minus_baseline]/results[minus_baseline].max()
             results[key + '-idealscore'] = results[minus_baseline]/(1-baseline[key])
 
-    results['score'] = results[[key+'-score' for i in checks]].values.sum(axis=1)
-    results['ideal_score'] = results[[key+'-idealscore' for i in checks]].values.sum(axis=1)
+    results['score'] = results[[key+'-score' for key in checks]].values.sum(axis=1)
+    results['ideal_score'] = results[[key+'-idealscore' for key in checks]].values.sum(axis=1)
     
     # save to csv
     results[['model_name', 'datetime', 'score', 'ideal_score']].to_csv(leaderbord_csv)

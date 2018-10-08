@@ -42,6 +42,6 @@ if __name__ == '__main__':
     if os.stat("test_result.csv").st_size == 0:
         pd.DataFrame([results]).to_csv('test_result.csv', index=False)
     else:
-        pd.read_csv('test_result.csv', index_col='datetime'
-        ).append(pd.DataFrame([results])).to_csv('test_result.csv', index='datetime')
+        pd.read_csv('test_result.csv', index_col=None
+        ).append(pd.DataFrame([results])).to_csv('test_result.csv', index=False)
     
